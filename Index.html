@@ -1,0 +1,198 @@
+# Claytor-mobile-auto-repair.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Claytor Mobile Auto Repair</title>
+  <meta name="description" content="ASE-Certified mobile auto repair. Affordable, honest pricing. Professional diagnostics, repairs, and maintenance at your location." />
+  <style>
+    :root {
+      --primary: #0f172a; /* slate-900 */
+      --accent: #2563eb;  /* blue-600 */
+      --muted: #64748b;   /* slate-500 */
+      --bg: #f8fafc;      /* slate-50 */
+      --card: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji';
+      color: var(--primary); background: linear-gradient(180deg, #ffffff, var(--bg));
+    }
+    a { color: var(--accent); text-decoration: none; }
+    header {
+      position: sticky; top: 0; z-index: 50;
+      background: rgba(255,255,255,.9); backdrop-filter: blur(8px);
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .nav {
+      max-width: 1100px; margin: 0 auto; padding: 12px 16px;
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    }
+    .brand { font-weight: 800; letter-spacing: .2px; }
+    .nav a.btn { padding: 10px 14px; border-radius: 999px; background: var(--accent); color: #fff; font-weight: 600; }
+    .hero {
+      max-width: 1100px; margin: 0 auto; padding: 72px 16px 40px;
+      display: grid; grid-template-columns: 1.2fr .8fr; gap: 28px;
+    }
+    .badge { display: inline-block; padding: 6px 10px; border-radius: 999px; background: #e0e7ff; color: #1e40af; font-weight: 700; font-size: 12px; }
+    h1 { font-size: clamp(28px, 4vw, 44px); margin: 12px 0; }
+    .lead { color: #334155; font-size: 18px; }
+    .cta { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 16px; }
+    .btn { padding: 12px 16px; border-radius: 10px; border: 1px solid #e5e7eb; font-weight: 700; }
+    .btn.primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+    .card {
+      background: var(--card); border: 1px solid #e5e7eb; border-radius: 16px; padding: 18px;
+      box-shadow: 0 10px 20px rgba(2,6,23,.05);
+    }
+    .checks { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 12px; }
+    .check { display: flex; gap: 8px; align-items: center; font-weight: 700; }
+    .check span { color: #16a34a; font-size: 18px; }
+    section { max-width: 1100px; margin: 0 auto; padding: 40px 16px; }
+    h2 { font-size: 28px; margin-bottom: 12px; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .muted { color: var(--muted); }
+    .policy h3 { margin-top: 22px; }
+    ul { padding-left: 18px; }
+    li { margin: 6px 0; }
+    footer { border-top: 1px solid #e5e7eb; padding: 24px 16px; }
+    .footer-inner { max-width: 1100px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between; }
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; }
+      .checks, .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="brand">Claytor Mobile Auto Repair</div>
+      <a class="btn" href="#contact">Message Me</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <span class="badge">ASE-Certified • Mobile Service</span>
+        <h1>Professional Auto Repair at a Fraction of Shop Costs</h1>
+        <p class="lead">
+          With 14 years of hands-on automotive experience and ASE Certification, I provide professional-quality repairs,
+          diagnostics, and routine maintenance at your location—without inflated prices.
+        </p>
+        <div class="checks">
+          <div class="check"><span>✔</span> Affordable & honest pricing</div>
+          <div class="check"><span>✔</span> Professional, experienced service</div>
+          <div class="check"><span>✔</span> Quality work you can trust</div>
+        </div>
+        <div class="cta">
+          <a class="btn primary" href="#contact">Get a Quote</a>
+          <a class="btn" href="#policies">View Policies</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Services</h3>
+        <p class="muted">Most makes & models</p>
+        <ul>
+          <li>Diagnostics & troubleshooting</li>
+          <li>Brakes, suspension, steering</li>
+          <li>Engine & drivability repairs</li>
+          <li>Routine maintenance</li>
+        </ul>
+        <p class="muted">Message me for a full list of services and pricing.</p>
+      </div>
+    </section>
+
+    <section id="policies">
+      <h2>Policies & Warranty</h2>
+      <div class="card policy">
+        <p>
+          Claytor Mobile Auto Repair is an independent mobile automotive repair service. All services are performed by an
+          ASE-Certified technician using professional standards and industry-accepted repair practices.
+        </p>
+        <p>
+          All prices provided are estimates and may change due to vehicle condition, accessibility, rust, prior repairs,
+          or additional issues discovered during service. Diagnostic fees are non-refundable but may be applied toward
+          approved repairs.
+        </p>
+        <p>
+          Customer-supplied parts are installed at the customer’s request and are <strong>not covered</strong> under any
+          labor or parts warranty. Claytor Mobile Auto Repair is not responsible for defects, failures, delays, or damages
+          related to customer-supplied components.
+        </p>
+        <p>
+          While every effort is made to properly diagnose and repair vehicles, automotive systems are complex and
+          additional issues may arise. Claytor Mobile Auto Repair is not responsible for pre-existing conditions,
+          manufacturer defects, or unrelated failures occurring before or after service.
+        </p>
+        <p><strong>Payment is due upon completion of services unless otherwise agreed upon in writing.</strong></p>
+
+        <h3>Limited Labor Warranty</h3>
+        <p>
+          Claytor Mobile Auto Repair provides a <strong>30-day limited labor warranty</strong> from the date of service on
+          <strong>workmanship only</strong>.
+        </p>
+        <p>
+          This warranty covers labor performed by Claytor Mobile Auto Repair if the original repair fails solely due to
+          improper workmanship. Covered labor will be corrected at no additional charge, at the technician’s discretion.
+        </p>
+        <h4>This Labor Warranty Does NOT Cover:</h4>
+        <ul>
+          <li>Parts failure of any kind (new, used, aftermarket, OEM, or customer-supplied)</li>
+          <li>Customer-supplied parts or components</li>
+          <li>Normal wear-and-tear items</li>
+          <li>Pre-existing conditions or unrelated failures</li>
+          <li>Electrical, computer, or intermittent issues not present at the time of service</li>
+          <li>Rusted, seized, or previously damaged components</li>
+          <li>Vehicle modifications or poor maintenance history</li>
+          <li>Repairs altered or touched by another shop or individual after service</li>
+          <li>Diagnostic conclusions or scan results</li>
+          <li>Misuse, neglect, accidents, racing, towing overloads, or off-road use</li>
+        </ul>
+        <h4>Additional Warranty Terms:</h4>
+        <ul>
+          <li>Warranty applies only to the original customer and vehicle</li>
+          <li>Warranty claims must be reported within <strong>30 days</strong></li>
+          <li>Vehicle must not be repaired or altered by another party after service</li>
+          <li>No additional warranties are expressed or implied</li>
+          <li>Not responsible for towing, rental vehicles, downtime, or incidental damages</li>
+        </ul>
+        <p>
+          By authorizing repairs, the customer acknowledges and agrees to these terms.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Message Me</h3>
+          <p>Fastest response via message.</p>
+          <a class="btn primary" href="mailto:claytormobileautorepair@example.com?subject=Service%20Request">Email Me</a>
+          <p class="muted">(Replace with your real email or add SMS link)</p>
+        </div>
+        <div class="card">
+          <h3>Service Area</h3>
+          <p class="muted">Mobile service at your location.</p>
+        </div>
+        <div class="card">
+          <h3>Hours</h3>
+          <p class="muted">By appointment</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>© <span id="year"></span> Claytor Mobile Auto Repair</div>
+      <div class="muted">Independent Mobile Service • ASE-Certified</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
